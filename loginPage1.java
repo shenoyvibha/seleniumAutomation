@@ -3,6 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class loginPage1 {
+    //Methods to return elements
     public WebElement loginUsingEmail() {
         WebElement loginButton = getDriver.webDriver.findElement(By.className("btn-email"));
         return loginButton;
@@ -23,7 +24,7 @@ public class loginPage1 {
         WebElement loginButton = getDriver.webDriver.findElement(By.name("home_form"));
         return loginButton;
     }
-
+    // methods to perform actions on the elements
     public void clickLoginUsingEmail() throws InterruptedException {
         Thread.sleep(3000);
         loginUsingEmail().click();
